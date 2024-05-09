@@ -137,15 +137,9 @@ function arrayJoin (array1, array2) {
     let fusioneArray = []
 
         for (let i = 0; i < array1.length; i++) {
-            const element = array1[i];
-            fusioneArray.push(element)
-            for (let i = 0; i < array2.length; i++) {
-                const element = array2[i];
-                if (!fusioneArray.includes(element)){
-                    fusioneArray.push(element)
-                }
+            fusioneArray.push(array1[i])
+            fusioneArray.push(array2[i])
             }
-        }
 
         return fusioneArray
     }
