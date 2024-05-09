@@ -144,3 +144,30 @@ function arrayJoin (array1, array2) {
         return fusioneArray
     }
 
+    //  SNACK 5
+let giochi = ["darksouls", "drakengard", "finalfantasy", "kingdomhearts", "nier"]
+let a;
+let b;
+let x = RandomElementsArray (giochi, a, b)
+
+    function RandomElementsArray (array, a, b){
+        let newArray = []
+        let finalArray = []
+        b = Math.floor(Math.random() * array.length);
+        a = Math.floor(Math.random() * b - 1);
+
+        while (a <= b) {
+            newArray.push(a++)
+        }
+
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] == newArray[i]) {
+                finalArray.push(array[i])
+            }
+            
+        }
+
+        console.log(finalArray)
+
+        
+    }
